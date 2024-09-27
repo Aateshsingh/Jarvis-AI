@@ -85,11 +85,11 @@ function takeCommand(message) {
         "Nitish Roommate 901": "+919304610175"
     };
     
-    if (message.includes("whatsapp")) {
-        speak("opening WhatsApp...");
-        const name = message.split("whatsapp ")[1]?.trim();
+    if (message.includes("call whatsapp")) {
+        speak("calling on WhatsApp...");
+        const name = message.split("call whatsapp ")[1]?.trim();
         if (contacts[name]) {
-            window.open(`https://wa.me/${contacts[name]}`);
+            window.open(`whatsapp://call?phone=${contacts[name]}`);
         } 
         else {
             speak("Contact not found.");
