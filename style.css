@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#logo {
+    width: 40vw;
+}
+
+h1 {
+    font-family: "Protest Guerrilla", sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    font-size: 48px;
+}
+
+#name {
+    color: rgb(255, 105, 180);
+    font-size: 55px;
+    transition: color 0.3s;
+}
+
+#virtual-assistant {
+    color: rgb(64, 224, 208);
+    font-size: 55px;
+    transition: color 0.3s;
+}
+
+#voice {
+    width: 150px;
+    display: none;
+}
+
+#btn {
+    width: 30%;
+    background: linear-gradient(to right, rgb(30, 144, 255), rgb(0, 191, 255));
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background: linear-gradient(to right, rgb(0, 102, 204), rgb(0, 140, 255));
+    transform: translateY(-3px);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #logo {
+        width: 60vw;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #name,
+    #virtual-assistant {
+        font-size: 40px;
+    }
+
+    #btn {
+        width: 50%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #name,
+    #virtual-assistant {
+        font-size: 30px;
+    }
+
+    #btn {
+        width: 70%;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #voice {
+        width: 100px;
+    }
+}
+
+
