@@ -51,10 +51,7 @@ function takeCommand(message) {
         speak("opening google")
         window.open("https://www.google.co.in/")
     }
-    else if (message.includes("whatsapp")) {
-        speak("opening whatsapp ")
-        window.open("whatsapp://send?text=Hello");
-    }
+    
     else if (message.includes(" open ChatGPT")) {
         speak("opening ChatGPT...");
         window.open("https://chatgpt.com/");
@@ -83,9 +80,9 @@ function takeCommand(message) {
     }
 
     const contacts = {
-        "Naveen Singh": "9161307071",
-        "Aanshi Di": "8354822497",
-        "Nitish Roommate 901": "9304610175"
+        "Naveen Singh": "+919161307071",
+        "Aanshi Di": "+918354822497",
+        "Nitish Roommate 901": "+919304610175"
     };
     
     if (message.includes("whatsapp")) {
