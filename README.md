@@ -3,7 +3,7 @@ Technologies used -
 1. HTML
 2. CSS
 3. Javascript
-# Live Link - https://thakur7071.github.io/Jara-Virtual-Assistant-/
+# Live Link - https://aateshsingh.github.io/Jarvis-AI/
 
 # Following Commands are added - 
 1. Hello 
