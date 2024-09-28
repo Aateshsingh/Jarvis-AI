@@ -30,6 +30,12 @@ btn.addEventListener("click", () => {
     voice.style.display = "block"
 })
 
+const contacts = {
+    "Naveen Singh": "+919161307071",
+    "Aanshi Di": "+918354822497",
+    "Nitish Roommate 901": "+919304610175"
+};
+
 function takeCommand(message) {
     btn.style.display = "flex"
     voice.style.display = "none"
@@ -44,8 +50,8 @@ function takeCommand(message) {
         window.open("https://www.youtube.com/")
     }
     else if (message.includes("open instagram")) {
-        speak("opening instagram..")
-        window.open("https://www.instagram.com/")
+        speak("opening Instagram...");
+        window.location.href = "instagram://";
     }
     else if (message.includes("open google")) {
         speak("opening google")
@@ -64,12 +70,12 @@ function takeCommand(message) {
 
     else if (message.includes("open LinkedIn")) {
         speak("opening LinkedIn...");
-        window.open("https://www.linkedin.com/");
+        window.location.href = "linkedin://";
     }
 
     else if (message.includes("open Spotify")) {
         speak("opening Spotify...");
-        window.open("spotify://");
+        window.open("Spotify://");
     }
     
     else if (message.includes("open calculator")) {
@@ -79,13 +85,9 @@ function takeCommand(message) {
         }
     }
 
-    const contacts = {
-        "Naveen Singh": "+919161307071",
-        "Aanshi Di": "+918354822497",
-        "Nitish Roommate 901": "+919304610175"
-    };
     
-    if (message.includes("call whatsapp")) {
+    
+    else if (message.includes("call whatsapp")) {
         speak("calling on WhatsApp...");
         const name = message.split("call whatsapp ")[1]?.trim();
         if (contacts[name]) {
